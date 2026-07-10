@@ -1,0 +1,22 @@
+{
+  "name": "aneko-photos-refactored",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/prepare-cloudflare-assets.mjs",
+    "preview": "astro preview",
+    "deploy": "wrangler deploy",
+    "cf-dev": "wrangler dev"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.5.0",
+    "@astrojs/vue": "^5.0.0",
+    "astro": "^5.7.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.94.0"
+  }
+}

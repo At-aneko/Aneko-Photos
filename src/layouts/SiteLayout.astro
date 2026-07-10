@@ -1,0 +1,28 @@
+---
+import '@/assets/styles/global.css'
+import { galleryConfig, siteConfig } from '@/config/site'
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>{siteConfig.title}</title>
+    <meta name="color-scheme" content="light" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="description" content={siteConfig.description} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href={galleryConfig.bucketURL} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
