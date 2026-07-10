@@ -38,13 +38,12 @@ scripts/
 需要使用 `wrangler.toml` 配置项目
 
 - **KV 命名空间**:
-<br>
-binding = "KV"
+binding = "KV"<br>
 id = "your_kv_namespace_id"
 
+
 - **R2 存储桶**:
-<br>
-binding = "R2"
+binding = "R2" <br>
 id = "your_r2_bucket_id"
 
 部署前请确保在 Cloudflare 中已有对应的 KV 和 R2 存储
