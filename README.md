@@ -37,12 +37,12 @@ scripts/
 
 需要使用 `wrangler.toml` 配置项目
 
-- **KV 命名空间**:
+- **KV 命名空间**:<br>
 binding = "KV"<br>
 id = "your_kv_namespace_id"
 
 
-- **R2 存储桶**:
+- **R2 存储桶**:<br>
 binding = "R2" <br>
 id = "your_r2_bucket_id"
 
